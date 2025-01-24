@@ -1,1 +1,36 @@
 # Guessing Gaming
+
+```mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#D6EAF8',
+      'primaryTextColor': '#EC7063',
+      'primaryBorderColor': '#AED6F1',
+      'lineColor': '#D7BDE2',
+      'secondaryColor': '#F5B7B1',
+      'tertiaryColor': '#B03A2E'
+    }
+  }
+}%%
+
+flowchart TD
+    Start((Start))-->End((End))
+
+    A((Computer Randomly Chooses number, <br> range between 1-20))--> B{Person gives #}
+    B --> |Correct!| C{You won! Play again?}
+    C --> A
+    B -->|Incorrect! <br> Number is too low| D{Guess again!, <br>Another guess}
+    B -->|Incorrect! <br> Number is too high| D
+    B -->|Error! <br>Not a number!| D
+    B -->|Number not in range!| D
+    D -->|Incorrect! <br> Number too high!| E{Last Chance! <br> Player gives one more guess}
+    D -->|Incorrect! <br> Number too low!| E
+    D -->|Error! <br> Not a number!| E
+    D -->|Number not in range!| E
+    E -->|Correct! You won! Play again?| A
+    D -->|Correct!| G{Play again?}
+    G --> A
+```
+END((End))
