@@ -40,4 +40,9 @@ The flow chart describes the three tries the player gets to guess the correct nu
 
 If a number is lower than the chosen number, it will display "Incorrect! Number is too low!". If the number is higher than the chosen number it will display, "Incorrect!, Number is too high!". If the player inputs anything other than a number, it will display "Error! Not a number!". 
 
-Finally, if the player inputs the correct number, the game will loop back to the start where a new number will be chosen by the computer. 
+Any input no matter the character, will use up one of there chances. 
+
+Finally, if the player inputs the correct number, the game will loop back to the start where a new number will be chosen by the computer. It will display "You won!"
+
+If the player picks the wrong number on the 3rd try, the message "You lost, Computer won!" will display and will loop back to the start for a new number to be chosen by the computer.
+
