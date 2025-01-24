@@ -32,8 +32,8 @@ flowchart TD
     E -->|Correct! You won! Play again?| A
     D -->|Correct!| G{Play again?}
     G --> A
+End((End))
 ```
-END((End))
 
 
 The flow chart describes the three tries the player gets to guess the correct number. The computer randomly picks a number between 1 and 20. The player then has 3 tries to guess the number chosen by the computer. 
