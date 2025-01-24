@@ -16,8 +16,7 @@
 }%%
 
 flowchart TD
-    Start((Start))-->End((End))
-
+    Start((Start)--> A
     A((Computer Randomly Chooses number, <br> range between 1-20))--> B{Person gives #}
     B --> |Correct!| C{You won! Play again?}
     C --> A
@@ -32,7 +31,6 @@ flowchart TD
     E -->|Correct! You won! Play again?| A
     D -->|Correct!| G{Play again?}
     G --> A
-End((End))
 ```
 
 
