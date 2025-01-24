@@ -1,4 +1,4 @@
-# Guessing Gaming
+# Guess the Random Number
 
 ```mermaid
 %%{
